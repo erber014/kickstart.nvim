@@ -2,7 +2,7 @@
 --  See `:help vim.keymap.set()`
 
 vim.keymap.set('n', '¤', '$', { desc = 'Remap for end of line with shift + 4' })
-
+vim.keymap.set('v', '¤', '$', { desc = 'Remap for end of line with shift + 4' })
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
