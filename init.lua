@@ -154,6 +154,13 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.relativenumber = true
 
+--Relative line numbers
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.signcolumn = 'number'
+
+-- [[ Basic Keymaps ]]
+--  See `:help vim.keymap.set()`
 -- Some keymaps are in this file!
 require 'keymaps'
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
