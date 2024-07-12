@@ -157,8 +157,8 @@ vim.opt.relativenumber = true
 --Relative line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.signcolumn = 'number'
-
+--vim.opt.signcolumn = 'number'
+vim.opt.signcolumn = 'auto:9'
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 -- Some keymaps are in this file!
@@ -747,20 +747,26 @@ require('lazy').setup({
       }
     end,
   },
-
+  {},
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is.
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'folke/tokyonight.nvim',
+    --'folke/tokyonight.nvim',
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    --'AlphaTechnolog/pywal.nvim',
+    -- Trying out wal setup for neovim here!!!
+    -- uncomment above to return to original config!
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'gruvbox'
-
+      vim.cmd.colorscheme 'catppuccin-macchiato'
+      -- pywal
+      -- catppuccin-macchiato
       --'tokyonight-night'
 
       -- You can configure highlights by doing something like:
