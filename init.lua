@@ -755,7 +755,7 @@ require('lazy').setup({
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     --'folke/tokyonight.nvim',
     'catppuccin/nvim',
-    name = 'catppuccin',
+    --name = 'catppuccin',
     --'AlphaTechnolog/pywal.nvim',
     -- Trying out wal setup for neovim here!!!
     -- uncomment above to return to original config!
